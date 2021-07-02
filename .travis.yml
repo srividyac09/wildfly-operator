@@ -1,0 +1,10 @@
+language: go
+dist: bionic
+arch:
+  - ppc64le
+go:
+  - 1.16.x
+script:
+  - make 
+  - make build
+  - make test-e2e-minikube
